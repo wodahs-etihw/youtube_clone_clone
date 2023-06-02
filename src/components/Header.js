@@ -55,12 +55,13 @@ const Header = () => {
                     </div>
                 )}
                 <Link to="/" className="flex h-5 items-center">
-                    <img
+                    <img  
                         className="h-full  dark:md:block"
                         src={ytLogo}
                         alt="Youtube"
                     />
-                    <img
+                    <img 
+                        
                         className="h-full md:hidden"
                         src={ytLogoMobile}
                         alt="Youtube"
