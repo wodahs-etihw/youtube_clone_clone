@@ -20,12 +20,25 @@ const VideoDetails = () => {
     //     fetchVideoDetails();
     //     fetchRelatedVideos();
     // }, [id]);
-
     useEffect(() => {
+        const fetchVideoDetails = () => {
+          // Fetch video details logic
+        };
+      
+        const fetchRelatedVideos = () => {
+          // Fetch related videos logic
+        };
+      
         document.getElementById("root").classList.add("custom-h");
         fetchVideoDetails();
         fetchRelatedVideos();
-      }, [id, fetchVideoDetails, fetchRelatedVideos]); 
+      }, [id]);
+
+    // useEffect(() => {
+    //     document.getElementById("root").classList.add("custom-h");
+    //     fetchVideoDetails();
+    //     fetchRelatedVideos();
+    //   }, [id, fetchVideoDetails, fetchRelatedVideos]); 
 
     const fetchVideoDetails = () => {
         setLoading(true);
