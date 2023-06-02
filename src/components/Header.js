@@ -99,7 +99,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="flex  border border-white h-8 w-8 overflow-hidden rounded-full md:ml-4">
-                    <img   src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg" />
+                    <img  alt="img" src="https://xsgames.co/randomusers/assets/avatars/female/67.jpg" />
                 </div>
             </div>
         </div>
