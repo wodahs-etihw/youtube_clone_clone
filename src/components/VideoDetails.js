@@ -15,11 +15,17 @@ const VideoDetails = () => {
     const { id } = useParams();
     const { setLoading } = useContext(Context);
 
+    // useEffect(() => {
+    //     document.getElementById("root").classList.add("custom-h");
+    //     fetchVideoDetails();
+    //     fetchRelatedVideos();
+    // }, [id]);
+
     useEffect(() => {
         document.getElementById("root").classList.add("custom-h");
         fetchVideoDetails();
         fetchRelatedVideos();
-    }, [id]);
+      }, [id, fetchVideoDetails, fetchRelatedVideos]); 
 
     const fetchVideoDetails = () => {
         setLoading(true);

@@ -11,10 +11,15 @@ const SearchResult = () => {
     const { searchQuery } = useParams();
     const { setLoading } = useContext(Context);
 
+    // useEffect(() => {
+    //     document.getElementById("root").classList.remove("custom-h");
+    //     fetchSearchResults();
+    // }, [searchQuery]);
+
     useEffect(() => {
         document.getElementById("root").classList.remove("custom-h");
         fetchSearchResults();
-    }, [searchQuery]);
+      }, [searchQuery, fetchSearchResults]); 
 
     const fetchSearchResults = () => {
         setLoading(true);
