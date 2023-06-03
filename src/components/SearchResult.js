@@ -5,21 +5,18 @@ import { fetchDataFromApi } from "../utils/api";
 import { Context } from "../context/contextApi";
 import LeftNav from "./LeftNav";
 import SearchResultVideoCard from "./SearchResultVideoCard";
+var id  = 0 ;
 
 const SearchResult = () => {
     const [result, setResult] = useState();
     const { searchQuery } = useParams();
     const { setLoading } = useContext(Context);
 
-    // useEffect(() => {
-    //     document.getElementById("root").classList.remove("custom-h");
-    //     fetchSearchResults();
-    // }, [searchQuery]);
-
     useEffect(() => {
         document.getElementById("root").classList.remove("custom-h");
         fetchSearchResults();
-      }, [searchQuery, fetchSearchResults]); 
+    }, [searchQuery]);
+ 
 
     const fetchSearchResults = () => {
         setLoading(true);
